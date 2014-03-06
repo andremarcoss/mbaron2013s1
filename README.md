@@ -9,3 +9,78 @@ plataforma Android. Com essa aplicação pode-se acessar de modo simples o
 Arduino, que através do Android será possível controlar dispositivos eletroeletrônicos
 como portões, luzes e a temperatura ambiente e fazer a interação do
 usuário com a sua residência.
+
+Para a atividade prática será criado um protótipo mecânico representando a
+residência com sua entrada e instalações elétricas e desenvolvido um aplicativo de
+ativação por smartphones.
+• Criação de um aplicativo Android para uso do celular ou smartphone, e
+uso de um emulador para os testes.
+• Criação de scripts em PHP para a conexão do Arduino com o servidor
+Web é comunicação do servidor com o dispositivo Android.
+• Criação dos layouts em XML para Android.
+• Criação de um servidor de banco de dados e um servidor PHP para ser
+usado como uma ponte entre a aplicação Android e o protótipo.
+• Para criação do firmware do micro controlador será utilizado o ambiente
+de desenvolvimento para Arduino (Arduino 1.0.3).
+
+
+MANUAL DE OPERAÇÃO E IMPLANTAÇÃO
+********************************
+Para a implantação deste sistema será necessário o uso de quatro componentes
+principais são eles;
+• Um desktop que será usado como servidor web é de dados;
+• Um celular ou smartphones com sistema Android;
+• Uma placa Arduino Uno ou similar.
+• Uma placa de relês para controlar os dispositivos externos.
+
+O aparelho deve suportar o sistema Android, e a instalação do aplicativo será feita via
+Bluetooth usando o servidor para esta tarefa.
+
+Servidor Web
+Para a o servidor será usado o Xampp, pois ele é um pacote para ser usado como servidor
+Web contendo o Apache, Mysql é o PHP.
+Para a configuração do PHP no Windows XP será necessária a alteração do arquivo
+php.ini-dist :
+
+Copie o arquivo php.ini-dist, que se encontra na pasta c:\php, para a pasta do
+Windows (geralmente c:\Windows). Troque seu nome por php.ini e em seguida
+abra-o. Localize o seguinte texto dentro deste arquivo: "extension_dir" e altere o
+valor desta entrada para o nome da pasta com os arquivos das extensões do PHP,
+que no nosso caso é "c:\php\extensions". Salve e feche este arquivo, copie
+também o arquivo php4ts.dll, que se encontra na pasta c:\php, para a
+pasta c:\Windows\System, no caso de Windows95/98/ME/XP, ou para a
+pasta c:\WINNT\System32, no caso de Windows NT/2000.
+Arduino Uno
+Para o uso do Arduino não tem muita coisa a fazer a única coisa a ser feita é a
+instalação dos drivers corretos que vem juntos como o compilador. O compilador
+pode ser baixado pelo link que está em referências úteis. Para a instalação plugue
+o Arduino na porta USB, ele ira pedir para instalar os drivers corretos. Assim que
+abrir a janela para localizar os arquivos a direcione-a para o endereço em que está
+a pasta dos drivers para continuar a instalação. Após a instalação dos drivers, o
+Arduino estará pronto para o uso, lembrando que quando o Arduino estiver sendo
+usado com o cabo USB ele não deve ser alimentado por uma fonte externa. 
+
+Sensores
+Para este trabalho foi utilizado um sensor de temperatura, mais para outras
+atividades pode se usar outros tipos de sensores com de nível, ultra-som, chaves
+entre outros. O sensor utilizado neste projeto foi o LM35 que é um sensor de
+temperatura analógico, o LM35 é um sensor de precisão, fabricado pela National
+Semiconductor, que apresenta uma saída de tensão linear proporcional à
+temperatura que se encontra ao seu redor, no nosso caso esta tensão varia de 0V a
+5V, o sensor é alimentado com 5V. 
+
+A ligação do sensor no Arduino é mostrada na figura 16, a alimentação é feita
+também pelo Arduino. Onde o fio vermelho é a alimentação de 5V, o fio verde é o
+terra e o fio amarelo é onde a tensão varia de 0V a 5V, sendo ligada na entrada
+analógica do Arduino.
+
+Esta placa é responsável por ligar e desligar os dispositivos que nela estão ligadas,
+para produzir a placa é necessário certo conhecimento de eletrônica ou conhecer
+alguém que possa fazê-la. Como ela funciona? Quando os valores dos pinos do
+Arduino estiverem em 0 à placa de relê ficará desligada, assim que o estado da
+porta for alterado para 1, o relê correspondente a porta que foi alterada irá fechar
+seus contatos ligando a carga que estiver ligada no terminal. 
+
+Dependendo do layout da placa de relê a ligação muda nos pontos de placa, mais a
+ligação no Arduino continua a mesma. Após esta etapa é só ligar as cargas nos
+relê para poder utilizar.
