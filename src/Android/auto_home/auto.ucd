@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="auto" id="{UMLID=_6VqKULdeEeKzJse7i-pUoQ,JavaID=}" metadata="uml2-1.0" initialized="true" tag="10" key="3230303730363239206175746F5F686F6D65">
+  <children xsi:type="editmodel:ClassEditModel" name="conexaoj" location="23,350" size="277,123" timstampe="3" stereotype="" id="{UMLID=_CQTFoLdfEeKzJse7i-pUoQ,JavaID=com.example.auto_home/conexaoj}" runTimeClassModel="executaHttpPost(Ljava.lang.String;Lorg.apache.http.NameValuePair;),getHttpClient(),httpClient,HTTP_TIMEOUT">
+    <children xsi:type="editmodel:CompartmentEditModel" size="103,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="HTTP_TIMEOUT" size="103,16" id="{UMLID=_CbLf87dfEeKzJse7i-pUoQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="httpClient" size="73,16" id="{UMLID=_Cau0ALdfEeKzJse7i-pUoQ}"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="119,36">
+      <children xsi:type="editmodel:MethodEditModel" name="getHttpClient" size="100,16" id="{UMLID=_CbLf9bdfEeKzJse7i-pUoQ,JavaID=com.example.auto_home/conexaoj#getHttpClient()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="executaHttpPost" size="119,16" id="{UMLID=_Cbea4LdfEeKzJse7i-pUoQ,JavaID=com.example.auto_home/conexaoj#executaHttpPost(Ljava.lang.String;Lorg.apache.http.NameValuePair;)}"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" showMethods="true" showAttributes="true" showLiterals="true" ShowInnerEntity="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="controlej" location="378,98" size="301,335" timstampe="37" stereotype="" id="{UMLID=_EG6pALdfEeKzJse7i-pUoQ,JavaID=com.example.auto_home/controlej}" runTimeClassModel="tgbuttonTeperatura,tgbuttonLuz,fechar,texto,trocatemp(Ljava.lang.String;),controleSeekBar(),abri,onCreate(Landroid.os.Bundle;),temp,atualizatemp(),seekBar,ajuste,verifica,enviaInstrucao(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="121,198">
+      <children xsi:type="editmodel:AttributeEditModel" name="abri" size="47,16" id="{UMLID=_yw1cELdgEeKzJse7i-pUoQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="fechar" size="61,16" id="{UMLID=_ywsSILdgEeKzJse7i-pUoQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="ajuste" size="58,16" id="{UMLID=_EJJdqbdfEeKzJse7i-pUoQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="tgbuttonLuz" size="86,16" id="{UMLID=_EI_so7dfEeKzJse7i-pUoQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="tgbuttonTeperatura" size="121,16" id="{UMLID=_EI2isLdfEeKzJse7i-pUoQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="seekBar" size="69,16" id="{UMLID=_EJJdobdfEeKzJse7i-pUoQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="texto" size="53,16" id="{UMLID=_EI_sq7dfEeKzJse7i-pUoQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="temp" size="52,16" id="{UMLID=_EI_ss7dfEeKzJse7i-pUoQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="verifica" size="65,16" id="{UMLID=_EJJdpbdfEeKzJse7i-pUoQ}"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="120,90">
+      <children xsi:type="editmodel:MethodEditModel" name="onCreate" size="84,16" id="{UMLID=_EJTOo7dfEeKzJse7i-pUoQ,JavaID=com.example.auto_home/controlej#onCreate(Landroid.os.Bundle;)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="controleSeekBar" size="120,16" id="{UMLID=_EJJdq7dfEeKzJse7i-pUoQ,JavaID=com.example.auto_home/controlej#controleSeekBar()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="trocatemp" size="88,16" id="{UMLID=_EJTOoLdfEeKzJse7i-pUoQ,JavaID=com.example.auto_home/controlej#trocatemp(Ljava.lang.String;)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="atualizatemp" size="100,16" id="{UMLID=_EJTOqrdfEeKzJse7i-pUoQ,JavaID=com.example.auto_home/controlej#atualizatemp()}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="enviaInstrucao" size="111,16" id="{UMLID=_EJJdrLdfEeKzJse7i-pUoQ,JavaID=com.example.auto_home/controlej#enviaInstrucao(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;)}"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" showMethods="true" showAttributes="true" showLiterals="true" ShowInnerEntity="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="MainActivity" location="14,28" size="295,119" timstampe="19" stereotype="" id="{UMLID=_FnBw4LdfEeKzJse7i-pUoQ,JavaID=com.example.auto_home/MainActivity}" runTimeClassModel="txtlogin,onCreate(Landroid.os.Bundle;),txtsenha,btAcessar">
+    <children xsi:type="editmodel:CompartmentEditModel" size="80,54">
+      <children xsi:type="editmodel:AttributeEditModel" name="txtsenha" size="71,16" id="{UMLID=_FnUr1LdfEeKzJse7i-pUoQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="txtlogin" size="63,16" id="{UMLID=_FnUr0LdfEeKzJse7i-pUoQ}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="btAcessar" size="80,16" id="{UMLID=_FnUr1rdfEeKzJse7i-pUoQ}"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="84,18">
+      <children xsi:type="editmodel:MethodEditModel" name="onCreate" size="84,16" id="{UMLID=_FnUr2LdfEeKzJse7i-pUoQ,JavaID=com.example.auto_home/MainActivity#onCreate(Landroid.os.Bundle;)}"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" showMethods="true" showAttributes="true" showLiterals="true" ShowInnerEntity="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" properties="wireOptions=1" autoName="false"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="14,14" gridOrigin="84,112" rulerUnit="cm" gridShow="true">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" attributeSorter="Natural" methodSorter="Natural" shortPackageNameFormat="true" showClassStereotype="true" showPackageStereotype="true" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" showInterfaceStereotype="true" showMethods="true" showAttributes="true" showLiterlas="true" showInnerEntity="true"/>
+</editmodel:ClassDiagramEditModel>
